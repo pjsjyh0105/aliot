@@ -1,0 +1,75 @@
+.nav {
+    background-color: #FFF;
+    width: 100%;
+    position: fixed;
+    height: 3.75rem;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    padding: 1.12rem 1.88rem;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+.symbol {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+/* .nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} */
+
+.title {
+    margin-left: 1.38rem;
+}
+
+.nav .title img {
+    width: 6.9375rem;
+    height: 1.587rem;
+}
+
+.titleLabel {
+    color: var(--font-color-bold--);
+    font-family: "Noto Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 1.31rem;
+    margin-right: 0.25rem;
+}
+
+.rowbar {
+    width: 0.125rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    background: var(--bar-background-);
+    margin: 0 1.19rem;
+}
+
+.titlenamediv {
+    display: inline-flex;
+    width: 18.9375rem;
+    height: 2.25rem;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: 0.1875rem;
+    background: var(--title-rename-background-);
+}
+
+.titlename {
+    color: var(--font-color-bold--);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.miniprofile {
+    border-radius: 50%;
+}

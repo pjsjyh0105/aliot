@@ -1,0 +1,69 @@
+.div {
+    position: relative;
+    display: flex;
+    width: 15rem;
+    height: 2rem;
+    padding: 0.1875rem 0.125rem;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 0.1875rem;
+    gap: 0.19rem;
+}
+
+.divIcon {
+    width: 1.875rem;
+    height: 1.875rem;
+    position: absolute;
+    top: 50%;
+    left: 0.12rem;
+    transform: translateY(-50%);
+}
+
+.inputContents:not([type="text"]) {
+    background: transparent;
+    border: 0;
+    color: var(--font-color-semi--);
+    padding: 0;
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+
+.inputContents {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 1.875rem;
+    height: 2.25rem;
+    background: transparent;
+    border: 0;
+    color: var(--font-color-semi--);
+    font-size: 0.9375rem;
+    font-weight: 400;
+    background: var(--inputsearch-background-);
+    border-radius: 0.1875rem;
+}
+
+.inputContents:focus-visible {
+    outline-width: 1px;
+    outline-color: #7E73FE;
+    background: transparent;
+    border-radius: 0.1875rem;
+}
+
+.inputContents:focus {
+    outline: auto;
+    outline-width: 1px;
+    outline-color: #7E73FE;
+    background: transparent;
+    border-radius: 0.1875rem;
+}
+
+
+.inputContentscancle {
+    cursor: pointer;
+    width: 1.875rem;
+    height: 1.875rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}

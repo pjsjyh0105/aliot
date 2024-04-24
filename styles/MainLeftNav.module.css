@@ -1,0 +1,101 @@
+.nav input {
+    display: none;
+}
+
+.nav {
+    padding: 0.25rem;
+    /* top: 0;
+    left: 0; */
+    /* position: fixed; */
+    width: 6rem;
+    height: 63.75rem;
+    padding-top: 3.34rem;
+    padding-bottom: 3.34rem;
+    background: #fff;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div {
+    background: #fff;
+    width: 5.5rem;
+    height: auto;
+    position: relative;
+}
+
+.divnav {
+    z-index: 1;
+    width: 5.5rem;
+    height: 7rem;
+    background: #ECEAFF;
+    position: absolute;
+    top: 0;
+    transition: .5s;
+    border-radius: 0.3125rem;
+}
+
+.label {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    width: 5.5rem;
+    height: 7rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    padding: 1.53rem 0.7rem;
+
+    color: #717171;
+
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.label div {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-bottom: 0.19rem;
+}
+
+.div label:hover {
+    border-radius: 0.3125rem;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.div label:active {
+    border-radius: 0.3125rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav input:checked+.label {
+    color: #554AD3;
+    font-weight: 600;
+}
+
+.nav input:checked+.label div {
+    background-color: #000;
+}
+
+
+.fill {
+    fill: #717171;
+}
+
+.nav input:checked+.label .fill {
+    fill: #7E73FE;
+}
+
+.stroke {
+    stroke: #717171;
+}
+
+.nav input:checked+.label .stroke {
+    stroke: #7E73FE;
+}

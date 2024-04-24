@@ -1,0 +1,28 @@
+.div {
+    margin-right: 1.62rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.div * {
+    cursor: pointer;
+}
+
+.div img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.div:hover {
+    background-color: var(--icon-hover-fill);
+}
+
+.point {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 50%;
+    background-color: rgb(238, 79, 79);
+}

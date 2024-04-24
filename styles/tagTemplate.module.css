@@ -1,0 +1,61 @@
+.div {
+    padding: 0.375rem 0.625rem;
+    border-radius: 3.125rem;
+    border: 0.11rem solid #000;
+    display: flex;
+    gap: 0.0625rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag {
+    border-radius: 3.125rem;
+}
+
+.tag * {
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* 
+.tag *:hover {
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.05);
+} */
+
+.img {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.imghover {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    right: 0;
+    transform: translateX(-0.625rem) translateY(-50%);
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 50%;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.img:hover+.imghover {
+    display: flex;
+}
+
+.img:hover {
+    position: relative;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.div svg:hover {
+    position: relative;
+    border-radius: 50%;
+    z-index: 1;
+}

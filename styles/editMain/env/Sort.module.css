@@ -1,0 +1,8 @@
+.button {
+    width: 7.4375rem;
+    height: 2.25rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #F8F8F8;
+}

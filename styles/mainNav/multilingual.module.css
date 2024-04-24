@@ -1,0 +1,48 @@
+.div {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.0625rem;
+}
+
+.divTop {
+    position: relative;
+}
+
+.divTop * {
+    cursor: pointer;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #2f2f2f;
+}
+
+.label {
+    margin-left: 0.8175rem;
+}
+
+.divTop .select {
+    margin-top: 0.875rem;
+    position: absolute;
+    top: 2rem;
+    height: 5rem;
+    background-color: aliceblue;
+    width: auto;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    padding: 0.5rem 0rem;
+    border-radius: 3px;
+}
+
+.select div {
+
+    width: 7rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    margin-top: 0.5rem;
+}

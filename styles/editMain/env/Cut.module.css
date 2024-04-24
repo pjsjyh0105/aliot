@@ -1,0 +1,16 @@
+.button {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 2.375rem;
+    background-color: #F8F8F8;
+}
+
+.cutButton {
+    width: 16.875rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #F8F8F8;
+}
