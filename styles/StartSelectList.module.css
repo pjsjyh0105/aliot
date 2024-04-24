@@ -1,0 +1,181 @@
+.selectParent {
+    position: relative;
+    z-index: 10;
+}
+
+.div {
+    width: 17.9375rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    border-radius: 0.1875rem;
+    background: #FDFDFD;
+    display: flex;
+    color: #404040;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.56rem 0.81rem;
+    border: 1.8px solid transparent;
+    align-items: center;
+}
+
+.div:focus {
+    border: 1.8px solid #7E73FE;
+}
+
+.div:focus+.SelectedDivlist {
+    /* display: inline-flex; */
+    opacity: 1;
+    -webkit-animation-name: none;
+    animation-name: none;
+}
+
+.div:focus .SelectedDiv img {
+    transform: rotate(180deg);
+}
+
+.Selectbar {
+    margin-left: 0.75rem;
+    width: 0.06rem;
+    height: 0.85525rem;
+    background: #9a9a9a;
+}
+
+
+.SelectedDiv {
+    display: flex;
+    color: #2F2F2F;
+    width: 13rem;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    cursor: pointer;
+}
+
+.SelectedDiv label {
+    width: 9.87rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.SelectedDiv img {
+    width: 1.5rem;
+    height: 1.25rem;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+
+.SelectedDivlist {
+    opacity: 0;
+    display: inline-flex;
+    top: 2.69rem;
+    left: 3.9rem;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    width: 13.88rem;
+    height: auto;
+    background-color: #FDFDFD;
+    border-radius: 0.125rem;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: 0.2s ease;
+    -webkit-animation-name: HideList;
+    animation-name: HideList;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: step-start;
+    animation-timing-function: step-start;
+}
+
+.SelectedDivlist * {
+    cursor: pointer;
+}
+
+.SelectedDivlist ul,
+.SelectedDivlist ul li {
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.13rem;
+
+    color: #2F2F2F;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.SelectedDivlist ul {
+    height: auto;
+}
+
+
+.SelectedDivlist li label {
+    padding-left: 1.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.SelectedDivlist li:first-child {
+    border-radius: 0.1875rem 0.1875rem 0rem 0rem;
+}
+
+.SelectedDivlist li:last-child {
+    border-radius: 0rem 0rem 0.1875rem 0.1875rem;
+}
+
+.SelectedDivlist li:hover,
+.SelectedDivlist li:focus {
+    background: #7E73FE;
+    color: #fff;
+    font-weight: 500;
+}
+
+.SelectedDivlist li:hover svg path {
+    stroke: #fff;
+}
+
+.select__value {
+    width: auto;
+}
+
+.select__input {
+    display: none;
+}
+
+
+.SelectedDiv .select__inputText {
+    display: none;
+}
+
+
+.SelectedDiv .select__input:checked+.select__inputText {
+    display: flex;
+}
+
+@-webkit-keyframes HideList {
+    from {
+        transform: scaleY(1);
+    }
+
+    to {
+        transform: scaleY(0);
+    }
+}
+
+@keyframes HideList {
+    from {
+        transform: scaleY(1);
+    }
+
+    to {
+        transform: scaleY(0);
+    }
+}

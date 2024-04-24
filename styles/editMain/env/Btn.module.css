@@ -1,0 +1,19 @@
+.button {
+    display: none;
+}
+.label {
+    width: 4.4375rem;
+    height: 2.25rem;
+    background-color: #F5F5F5;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+}
+.button:checked+.label {
+    border-radius: 0.1875rem;
+        border: 1.8px solid #7E73FE;
+    
+        background: #F0EEFF;
+}
