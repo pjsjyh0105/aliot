@@ -15,7 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      style={{
+        overflowY: "scroll", // 스크롤 기능 활성화
+
+        scrollbarWidth: "none" /* Firefox */,
+      }}
+    >
       <body className={inter.className}>{children}</body>
     </html>
   );

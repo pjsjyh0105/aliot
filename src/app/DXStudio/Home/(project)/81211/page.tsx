@@ -99,11 +99,11 @@ export default function ProjectTab() {
             <CreateFile title={"지윰"} addresss={"/Geyeum"}></CreateFile>
             <CreateFile
               title={"로봇 시뮬레이션"}
-              addresss={"/DXStudio/EditPage"}
+              addresss={"/robotz"}
             ></CreateFile>
             <CreateFile
               title={"지하차도 물 시뮬레이션"}
-              addresss={"/DXStudio/EditPage"}
+              addresss={"/water"}
             ></CreateFile>
 
             <CreateFile

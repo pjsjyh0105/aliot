@@ -1,0 +1,102 @@
+#topTitle {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 4.5625rem;
+    background: rgba(25, 37, 69, 0.2);
+    backdrop-filter: blur(6px);
+}
+
+#titleName {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 4.5625rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
+    font-family: "Noto Sans";
+    font-size: 1.3125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.modelinfo-view-title-right-topAlarm {
+    display: none;
+    border-radius: 50%;
+}
+
+.modelinfo-view-title-right-topAlarm input[type="checkbox"] {
+    z-index: 1;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url(../public/img/alarm\ 40x40.png);
+    appearance: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    background-color: #1B2747;
+    margin: 0 0.94rem 0 0;
+    cursor: pointer;
+    /* 마우스 커서를 포인터로 변경 */
+    /* 그림자 효과 추가 */
+}
+
+.modelinfo-view-title-right-topAlarm input[type="checkbox"]:checked {
+    background-color: #FF7979;
+}
+
+.modelinfo-view-title-right-topAlarm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.modelinfo-view-title-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    width: auto;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.modelinfo-view-title-right-topAlarm img {
+    width: 3rem;
+    height: 3rem;
+    background-color: #1B2747;
+    border-radius: 50%;
+}
+
+.top-line-modelinfo-view {
+    width: 0.125rem;
+    height: 3.40625rem;
+    background: rgba(94, 106, 140, 0.60);
+    margin: 0 1rem 1.16rem 0.5rem;
+}
+
+.top-time-modelinfo-view {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.top-time-modelinfo-view-date {
+    color: #BCBCBC;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.top-time-modelinfo-view-time {
+    color: #FFF;
+    font-size: 1.1875rem;
+    font-weight: 500;
+}

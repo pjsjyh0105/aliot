@@ -1,0 +1,27 @@
+.notificationContainer {
+    display: flex;
+    width: 19.5625rem;
+    height: 2.5rem;
+    border-radius: 0.125rem;
+    background: #8B8FA54D;
+    cursor: pointer;
+    backdrop-filter: blur(12.5px);
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -0.01563rem;
+    position: absolute;
+    top: 10.61rem;
+    right: 1.94rem;
+}
+
+.notificationContainer:hover {
+    background: #8B8FA580;
+}
+
+.notificationContainer:active {
+    background: #65687B;
+}
