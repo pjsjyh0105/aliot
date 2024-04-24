@@ -14,13 +14,20 @@ export default function Navigation() {
   return (
     <nav className={styles.nav}>
       <Box sx={{ display: "flex", alignItems: "center" }}>
-        <Image
-          alt=""
-          className={styles.symbol}
-          width={40}
-          height={40}
-          src="/img/symbol/1_심볼 1.png"
-        ></Image>
+        <Link
+          href="/DXStudio/Home/81211"
+          color="rgba(255,255,255,1)"
+          underline="none"
+        >
+          <Image
+            alt=""
+            className={styles.symbol}
+            width={40}
+            height={40}
+            src="/img/symbol/1_심볼 1.png"
+          ></Image>
+        </Link>
+
         <div className={styles.title}>
           <Image
             alt=""

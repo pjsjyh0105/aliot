@@ -67,23 +67,20 @@ export const MakeQR = () => {
         <image id="image0_2549_28856" width="297" height="297" />
       </defs>
     </svg>`;
-  if (typeof window !== "undefined") {
-    // window 객체를 사용하는 코드
-    const svgBase64 = window.btoa(unescape(encodeURIComponent(aliotIcon)));
-    const imageUrl = `data:image/svg+xml;base64,${svgBase64}`;
-    const downloadQRCode = async () => {
-      const canvas = await html2canvas(captureRef.current);
-      const image = canvas.toDataURL("image/png");
+  const svgBase64 = window.btoa(unescape(encodeURIComponent(aliotIcon)));
+  const imageUrl = `data:image/svg+xml;base64,${svgBase64}`;
+  const downloadQRCode = async () => {
+    const canvas = await html2canvas(captureRef.current);
+    const image = canvas.toDataURL("image/png");
 
-      // 이미지 다운로드
-      const link = document.createElement("a");
-      link.href = image;
-      link.download = "qr-code-with-box.png";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    };
-  }
+    // 이미지 다운로드
+    const link = document.createElement("a");
+    link.href = image;
+    link.download = "qr-code-with-box.png";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <Box>
       <Box

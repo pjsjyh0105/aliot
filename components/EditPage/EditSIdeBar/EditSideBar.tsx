@@ -53,7 +53,7 @@ export default function EditSideBar() {
     );
   };
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.nav} style={{}}>
       <Box className={styles.div}>
         <Box className={styles.divnav} style={sliderStyle}></Box>
         {/* 슬라이드바 제작 */}

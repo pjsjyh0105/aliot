@@ -123,11 +123,11 @@ const MainPage = () => {
             }}
             style={{ right: rightTab ? "0" : "-20.0625rem" }}
           >
-            <Fab
+            {/* <Fab
               color="primary"
               aria-label="add"
               sx={{ right: "100%", position: "absolute" }}
-            ></Fab>
+            ></Fab> */}
             <Box
               sx={{
                 width: "2.25rem",
